@@ -1,0 +1,17 @@
+.asset-wrapper{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.a-card{
+    width: 23%;
+    text-align: center;
+    color: #ffffff;
+    background-color: black;
+    padding: 1em;
+}
