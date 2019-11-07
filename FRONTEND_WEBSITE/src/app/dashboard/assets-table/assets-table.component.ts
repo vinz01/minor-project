@@ -10,15 +10,16 @@ export class AssetsTableComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   assets: any = []
-
+  public count = 0;
   ngOnInit() {
-    this.http.post('  PUT THE URL HERE !!!!   ', {
-      method: 'POST',
-      body: JSON.stringify({
-        uid : 'images/test.png'
-      })
+    
+  }
+  send_post(){
+    this.count = this.count +1;
+    this.http.post('http://127.0.0.1:5101/', {
+      url : 'images/test.png'   
     }).subscribe(data => {
-      this.assets = data
+      this.assets.push(data);
       console.log(this.assets);
     });
   }

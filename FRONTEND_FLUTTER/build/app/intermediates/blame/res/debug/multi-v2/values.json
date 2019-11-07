@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sahil/Desktop/Flutter_Projects/MinorP/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/sahil/.gradle/caches/transforms-2/files-2.1/4dbd550b8f39e7b989859ad5f7bf58d2/res/values/values.xml",
@@ -23,22 +23,20 @@
                     }
                 },
                 {
-                    "source": "/Users/sahil/Desktop/Flutter_Projects/MinorP/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER/build/app/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "347"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,312,394,498,601,721,823",
+                        "endColumns": "143,112,81,103,102,119,101,78",
+                        "endOffsets": "194,307,389,493,596,716,818,897"
                     },
                     "to": {
-                        "startLines": "1968",
-                        "startColumns": "4",
-                        "startOffsets": "130136",
-                        "endLines": "1972",
-                        "endColumns": "12",
-                        "endOffsets": "130428"
+                        "startLines": "509,512,513,514,515,516,517,525",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "34139,34597,34710,34792,34896,34999,35119,36257",
+                        "endColumns": "143,112,81,103,102,119,101,78",
+                        "endOffsets": "34278,34705,34787,34891,34994,35114,35216,36331"
                     }
                 },
                 {
@@ -192,20 +190,22 @@
                     }
                 },
                 {
-                    "source": "/Users/sahil/Desktop/Flutter_Projects/MinorP/build/app/generated/res/google-services/debug/values/values.xml",
+                    "source": "/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER/android/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,312,394,498,601,721,823",
-                        "endColumns": "143,112,81,103,102,119,101,78",
-                        "endOffsets": "194,307,389,493,596,716,818,897"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "347"
                     },
                     "to": {
-                        "startLines": "509,512,513,514,515,516,517,525",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "34139,34597,34710,34792,34896,34999,35119,36257",
-                        "endColumns": "143,112,81,103,102,119,101,78",
-                        "endOffsets": "34278,34705,34787,34891,34994,35114,35216,36331"
+                        "startLines": "1968",
+                        "startColumns": "4",
+                        "startOffsets": "130136",
+                        "endLines": "1972",
+                        "endColumns": "12",
+                        "endOffsets": "130428"
                     }
                 },
                 {

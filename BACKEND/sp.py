@@ -43,42 +43,46 @@ import spacy
 
 #I-Pro B-Pro Name Qty Date Pri Money
 def get_details(text):
-	spacy_nlp = spacy.load('testnew')
-	document = spacy_nlp(text)
-	filtered_text=["" for i in range(0,4)]
-	filtered_num=[0 for i in range(0,3)]	
-	
-	print('Original Sentence: %s' % (text))
-	txt=""
-	for element in document.ents:
-	    print('Type: %s, Value: %s' % (element.label_, element))
-	    txt+="Type: "+ str(element.label_)+" , "+"Value: " +str(element)
-	    if str(element.label_)=="B-PRO":
-	    	filtered_text[0]+=str(element)
-	    if str(element.label_)=="I-PRO":
-	    	filtered_text[1]+=str(element)
-	    	filtered_text[1]+=" "
-	    if str(element.label_)=="NAME":
-	    	filtered_text[2]+=str(element)
-	    if str(element.label_)=="DATE":
-	    	filtered_text[3]+=str(element)
-	    	filtered_text[3]+=" "
-	    if str(element.label_)=="PRI":
-	    	filtered_num[0]+=float(str(element))
-	    try:
-		    if str(element.label_)=="MONEY":
-		    	if float(str(element))>filtered_num[1]:
-		    		filtered_num[1]+=float(str(element))
-		
-	    except ValueError:
-	        print("z")
-	    if str(element.label_)=="QTY":
-	    	filtered_num[2]+=float(str(element))
-	    
-	#print(filtered_text)
-	#print(filtered_num)
-	txt=filtered_text + filtered_num
-	#print(txt)
-	return txt
+    spacy_nlp = spacy.load('testnew')
+    document = spacy_nlp(text)
+    filtered_text=["" for i in range(0,4)]
+    filtered_num=[0 for i in range(0,3)]	
+    
+    #print('Original Sentence: %s' % (text))
+    txt=""
+    for element in document.ents:
+        #print('Type: %s, Value: %s' % (element.label_, element))
+        txt+="Type: "+ str(element.label_)+" , "+"Value: " +str(element)
+        if str(element.label_)=="B-PRO":
+            filtered_text[0]+=str(element)
+        if str(element.label_)=="I-PRO":
+            filtered_text[1]+=str(element)
+            filtered_text[1]+=" "
+        if str(element.label_)=="NAME":
+            filtered_text[2]+=str(element)
+        if str(element.label_)=="DATE":
+            filtered_text[3]+=str(element)
+            filtered_text[3]+=" "
+        try:
+            if str(element.label_)=="PRI":
+                filtered_num[0]+=float(str(element))
+        except ValueError:
+            print("z")
+        try:
+            if str(element.label_)=="MONEY":
+                if float(str(element))>filtered_num[1]:
+                    filtered_num[1]+=float(str(element))
+        except ValueError :
+            print("xyz")
+
+
+        if str(element.label_)=="QTY":
+            filtered_num[2]+=float(str(element))
+        
+    #print(filtered_text)
+    #print(filtered_num)
+    txt=filtered_text + filtered_num
+    #print(txt)
+    return txt
 
 #get_details(article)

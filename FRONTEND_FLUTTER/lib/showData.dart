@@ -32,7 +32,7 @@ String postToJson(Post data) {
 }
  
 Future<http.Response> createPost(Post post) async{
-  var url="http://127.0.0.1:5203/"; 
+  var url="http://127.0.0.1:5101/"; 
   final response = await http.post('$url',
       headers: {
         HttpHeaders.contentTypeHeader: 'application/json'
@@ -81,26 +81,23 @@ class _ShowDataState extends State<ShowData> {
     return new Scaffold(
       appBar: AppBar(
         title: Text(
-          'DISPLAY DATA'
+          'REFRESH DATA'
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-                new RaisedButton(
-                  child: new Text("Get data",style: TextStyle(fontSize: 20)),  
+            Center(
+                child : RaisedButton(
+                  child: new Text("ADD IMAGE DATA TO DATABASE",style: TextStyle(fontSize: 20)),  
                   textColor: Colors.white,
                   color: Colors.blue,    
                   onPressed: () async {
                     xyz=callAPI(widget.filePath);
                     print("xyz1" + xyz);
-                  },
-                
+                  },    
                 ),
-                Text(
-                 "OUTPUT" + xyz
-                )
-                
+            ),
           ],
         ),
       ),

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sahil/Desktop/Flutter_Projects/MinorP/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/sahil/.gradle/caches/transforms-2/files-2.1/71eb9cfdbb7c6fbc71009d0459bc4a1b/res/values-mk/values.xml",

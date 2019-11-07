@@ -1,0 +1,9 @@
+.form-container{
+    margin:2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

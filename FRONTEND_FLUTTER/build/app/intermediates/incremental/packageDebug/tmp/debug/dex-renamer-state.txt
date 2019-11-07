@@ -1,7 +1,7 @@
-#Tue Nov 05 14:18:56 IST 2019
-base.0=/Users/sahil/Desktop/Flutter_Projects/MinorP/build/app/intermediates/transforms/dexMerger/debug/0
+#Thu Nov 07 12:49:52 IST 2019
+base.0=/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER/build/app/intermediates/transforms/dexMerger/debug/0
 path.1=classes2.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/sahil/Desktop/Flutter_Projects/MinorP/build/app/intermediates/transforms/dexMerger/debug/0
+base.1=/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER/build/app/intermediates/transforms/dexMerger/debug/0

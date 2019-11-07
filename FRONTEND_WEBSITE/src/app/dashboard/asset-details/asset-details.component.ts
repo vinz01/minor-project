@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AssetDetailsComponent implements OnInit {
 
   constructor() { }
-
+  public count = 0
   ngOnInit() {
   }
 

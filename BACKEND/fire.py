@@ -9,8 +9,11 @@ import ocr
 import add
 import sp
 from flask import Flask,jsonify,request
+from flask_cors import CORS,cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 urls =[
     {
         'url' : ''
@@ -26,20 +29,22 @@ def manage_invoice():
     ]
 
     print(urls[0]['url'])
-
+    s=urls[0]['url']
+    a=s.split("/")
+    imageName=a[1]
     blob = bucket.blob(urls[0]['url'])
 
     x=(blob.generate_signed_url(datetime.timedelta(seconds=1000), method='GET'))
 
     #webbrowser.open(x)
 
-    urllib.request.urlretrieve(x, "firebasetest.jpg")
+    urllib.request.urlretrieve(x, imageName)
 
-    filename=ocr.image_to_text("test.png")
+    filename=ocr.image_to_text(imageName)
 
     address=add.get_string(filename) #params: filename
 
-    string=ocr.send_string("test.png")
+    string=ocr.send_string(imageName)
 
     details=sp.get_details(string)
     return jsonify(details)
@@ -58,6 +63,5 @@ appMain = firebase_admin.initialize_app(cred, {
     }, name='storage')
 
 bucket = storage.bucket(app=appMain)
-
 app.debug = True
-app.run(port=5203)
+app.run(port=5101)

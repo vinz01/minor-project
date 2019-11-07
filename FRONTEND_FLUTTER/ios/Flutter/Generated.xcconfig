@@ -1,9 +1,9 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Users/sahil/desktop/flutter
-FLUTTER_APPLICATION_PATH=/Users/sahil/Desktop/Flutter_Projects/MinorP
-FLUTTER_TARGET=/Users/sahil/Desktop/Flutter_Projects/MinorP/lib/main.dart
+FLUTTER_ROOT=/Users/sahil/Desktop/flutter
+FLUTTER_APPLICATION_PATH=/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER
+FLUTTER_TARGET=/Users/sahil/Desktop/MINORPROJECT/FRONTEND_FLUTTER/lib/main.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build/ios
-FLUTTER_FRAMEWORK_DIR=/Users/sahil/desktop/flutter/bin/cache/artifacts/engine/ios
+FLUTTER_FRAMEWORK_DIR=/Users/sahil/Desktop/flutter/bin/cache/artifacts/engine/ios
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1

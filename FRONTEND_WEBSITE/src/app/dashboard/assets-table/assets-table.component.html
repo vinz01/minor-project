@@ -1,22 +1,58 @@
+<h1 style="font-weight: lighter;text-align: center;">Dashboard</h1>
+<br>
+<div class="d-flex flex-row justify-content-center">
+<button class="btn btn-outline-dark" (click)="send_post()"> Get Data</button>
+</div>
 <br>
 <br>
-{{ assets | json }}
+<div class="asset-wrapper">
+    <div class="a-card" style="background-color: #343A40;">
+        <h1>{{count}}</h1>
+        <p class="lead">total assets</p>
+    </div>
+    <div class="a-card" style="background-color: #3E444A;">
+        <h1>{{count}}</h1>
+        <p class="lead">total licences</p>
+    </div>
+    <div class="a-card" style="background-color: #343A40;">
+        <h1>{{count}}</h1>
+        <p class="lead">total accessories</p>
+    </div>
+    <div class="a-card" style="background-color: #3E444A;">
+        <h1>{{count}}</h1>
+        <p class="lead">total consumables</p>
+    </div>
+</div>
+
+<br>
+<br>
+
 
 <div class="container-fluid" style="overflow: auto;">
     <h1 class="font-weight:lighter;margin:2em">Assets</h1>
+    
+    <br>
     <br>
     <table class="table table-dark table-striped">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Address</th>
                 <th>Product Description</th>
+                <th></th>
+                <th>Name</th>
                 <th>Date</th>
-                <th>Quantity</th>
                 <th>Price</th>
+                <th>Qty</th>
             </tr>
         </thead>
         <tbody>
+            <tr *ngFor="let asset of assets">
+                <td>{{ asset[0] }}</td>
+                <td>{{ asset[1] }}</td>
+                <td>{{ asset[2] }}</td>
+                <td>{{ asset[3] }}</td>
+                <td>{{ asset[5] }}</td>
+                <td>{{ asset[6] }}</td>
+            </tr>
             
         </tbody>
     </table>

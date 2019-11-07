@@ -96,8 +96,12 @@ void _clear(){
             ],
           ),
           Uploader(file : _imageFile),
-
-
+        ]
+        else ...[
+                    Padding(
+                      padding: EdgeInsets.only(top :70),
+                    ),
+                    Text("UPLOAD IMAGE",textAlign: TextAlign.center,style: TextStyle(fontSize: 50,fontWeight: FontWeight.w600)),
 
         ]
       ],

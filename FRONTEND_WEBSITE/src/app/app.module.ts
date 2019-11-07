@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { AssetDetailsComponent } from './dashboard/asset-details/asset-details.component';
 import { AssetsTableComponent } from './dashboard/assets-table/assets-table.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AssetDetailsComponent,
     AssetsTableComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
